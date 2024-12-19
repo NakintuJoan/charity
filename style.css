@@ -1,0 +1,158 @@
+
+/* Make dropdown menus appear on hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Adjusts positioning for a smooth display */
+}
+
+/* Styling for dropdown items */
+.dropdown-menu .dropdown-item {
+    color: black;
+    transition: all 0.3s ease;
+}
+
+/* Blue hover effect for dropdown items */
+.dropdown-menu .dropdown-item:hover {
+    background-color: blue;
+    color: white;
+}
+
+.team-card {
+    background-color: #fff; /* White background for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 2px solid #81C784; /* Light green border */
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+.team-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #144704;
+}
+
+.team-card-body {
+    padding: 15px;
+}
+/* Pre-Nav Section Styling */
+.pre-nav {
+    background-color: rgba(173, 216, 230, 0.5);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030; /* Ensure it stays on top */
+}
+.pre-nav .social-icons a {
+    margin-right: 15px;
+    font-size: 1.2rem;
+    color: #144704;
+    text-decoration: none;
+}
+.pre-nav .social-icons a:hover {
+    color: #0d6efd;
+}
+
+/* Offset the body content from the fixed navbar */
+body {
+    padding-top: 80px; /* Adjust based on the height of the pre-nav and navbar */
+}
+
+/* Navbar Styling */
+nav.navbar {
+    position: fixed;
+    top: 50px; /* Adjust to the height of the pre-nav bar */
+    left: 0;
+    right: 0;
+    z-index: 1020; /* Ensure it's below the pre-nav but above other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section Styling */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+.hero-section .carousel-item img {
+    height: 400px; /* Reduced height */
+    object-fit: cover;
+}
+.hero-section .carousel-caption {
+    z-index: 2;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+/* Pre-Nav Section Styling */
+.pre-nav .social-icons a {
+margin-right: 15px;
+font-size: 1.2rem;
+color: #144704;
+text-decoration: none;
+}
+
+.pre-nav .social-icons a:hover {
+color: #0d6efd;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #144704;
+    color: white;
+    padding: 30px 0;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Style for box-shaped sublinks */
+.box-link {
+    display: block;
+    padding: 10px 15px;
+    background-color: white;
+    border: 2px solid blue;
+    border-radius: 5px;
+    margin: 5px 0;
+    color: blue;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.hero-section .carousel-caption a.btn {
+margin-top: 20px;
+margin-right: 15px;
+}
+
+.box-link:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* Align submenu items neatly */
+.submenu-container ul {
+    padding: 0;
+    margin: 0;
+}
+
+.submenu-container ul li {
+    list-style: none;
+}

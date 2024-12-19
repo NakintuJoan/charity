@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Mission - Regenesis Outreach Ministries</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .hero-section {
+            background: #81C784;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-weight: 600;
+            font-size: 2.5rem;
+        }
+        .hero-section p {
+            font-size: 1.1rem;
+            margin-top: 20px;
+        }
+        .mission-content {
+            padding: 60px 0;
+        }
+        .mission-content h2 {
+            text-align: center;
+            color: #388e3c;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+        .mission-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .mission-values {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .value-card {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+            width: 22%;
+        }
+        .value-card h4 {
+            color: #388e3c;
+            margin-bottom: 20px;
+        }
+        .btn-primary {
+            background-color: #388e3c;
+            border-color: #388e3c;
+            font-size: 1rem;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #2c6b32;
+            border-color: #2c6b32;
+        }
+        footer {
+            background-color: #388e3c;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer a {
+            color: #e8f5e9;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <style>
+        /* Floating In and Out Animation */
+        @keyframes floatInOut {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-10px); /* Float up */
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    
+        .card {
+            animation: floatInOut 2s ease-in-out infinite;
+        }
+    
+        /* Modify the animation timing and delay for different sections */
+        .charity-card {
+            animation: floatInOut 3s ease-in-out infinite;
+        }
+    
+        .event-card {
+            animation: floatInOut 3.5s ease-in-out infinite;
+        }
+    
+        .testimonial-card {
+            animation: floatInOut 4s ease-in-out infinite;
+        }
+    
+        /* Hover Effect: Increase size on hover */
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+    
+
+    <style>
+
+
+
+
+       /* Pre-Nav Section Styling */
+       .pre-nav {
+            background-color: rgba(173, 216, 230, 0.5);
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1030; /* Ensure it stays on top */
+        }
+        .pre-nav .social-icons a {
+            margin-right: 15px;
+            font-size: 1.2rem;
+            color: #144704;
+            text-decoration: none;
+        }
+        .pre-nav .social-icons a:hover {
+            color: #0d6efd;
+        }
+
+        /* Offset the body content from the fixed navbar */
+        body {
+            padding-top: 80px; /* Adjust based on the height of the pre-nav and navbar */
+        }
+
+        /* Navbar Styling */
+        nav.navbar {
+            position: fixed;
+            top: 50px; /* Adjust to the height of the pre-nav bar */
+            left: 0;
+            right: 0;
+            z-index: 1020; /* Ensure it's below the pre-nav but above other content */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hero Section Styling */
+        .hero-section {
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section .carousel-item img {
+            height: 400px; /* Reduced height */
+            object-fit: cover;
+        }
+        .hero-section .carousel-caption {
+            z-index: 2;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        /* Pre-Nav Section Styling */
+.pre-nav .social-icons a {
+    margin-right: 15px;
+    font-size: 1.2rem;
+    color: #144704;
+    text-decoration: none;
+}
+
+.pre-nav .social-icons a:hover {
+    color: #0d6efd;
+}
+
+
+        /* Footer Styling */
+        footer {
+            background-color: #144704;
+            color: white;
+            padding: 30px 0;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style for box-shaped sublinks */
+        .box-link {
+            display: block;
+            padding: 10px 15px;
+            background-color: white;
+            border: 2px solid blue;
+            border-radius: 5px;
+            margin: 5px 0;
+            color: blue;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .hero-section .carousel-caption a.btn {
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+        .box-link:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        /* Align submenu items neatly */
+        .submenu-container ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .submenu-container ul li {
+            list-style: none;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Pre-Nav Section -->
+<div class="pre-nav mb-2">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div>
+            <a href="#" class="btn btn-success btn-sm">Event Calendar</a>
+            <a href="#" class="btn btn-success btn-sm">Donate Now</a>
+        </div>
+        <div class="social-icons d-flex">
+            <a href="#" class="mx-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="mx-2"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="mx-2"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="mx-2"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images (3).jpeg" alt="Jojo Charity Logo" class="rounded-circle" style="width: 40px; height: 40px; margin-right: 10px;">
+            Regenesis Outreach Ministries
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About Us
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                        <li><a class="dropdown-item" href="mission.html">Our Mission</a></li>
+                        <li><a class="dropdown-item" href="vision.html">Our Vision</a></li>
+                        <li><a class="dropdown-item" href="teams.html">Our Team</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Events
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                        <li><a class="dropdown-item" href="coming.html">Upcoming Events</a></li>
+                        <li><a class="dropdown-item" href="past.html">Past Events</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="getInvolvedDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Get Involved
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="getInvolvedDropdown">
+                        <li><a class="dropdown-item" href="volunteer.html">Volunteer</a></li>
+                        <li><a class="dropdown-item" href="partner.html">Partner With Us</a></li>
+                        <li><a class="dropdown-item" href="CHILD.html">Sponsor a Child</a></li>
+                        <li><a class="dropdown-item" href="donate.html">Donate Resources</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <h1>Our Mission</h1>
+            <p>At Jojo Charity, we are committed to transforming communities through sustainable solutions and compassionate support. Our mission is to empower lives and build a brighter future for everyone.</p>
+        </div>
+    </div>
+
+    <!-- Mission Content -->
+<div class="mission-content container">
+    <h2 class="text-center">What Drives Us</h2>
+    <img src="assets/images (3).jpeg" alt="Jojo Charity Mission" class="mission-image mb-5 img-fluid">
+
+    <p class="text-center">Jojo Charity is founded on a passion to create a lasting change in the lives of people in need. We aim to bring hope, resources, and opportunities for growth to underserved communities through our various initiatives. By working together with local organizations, volunteers, and supporters, we believe we can build a better, more equitable future for all.</p>
+
+    <div class="mission-values row justify-content-center">
+        <div class="value-card col-md-3 col-12 mb-4">
+            <h4>Compassion</h4>
+            <p>We help others with empathy and care, ensuring dignity and respect for all.</p>
+        </div>
+        <div class="value-card col-md-3 col-12 mb-4">
+            <h4>Sustainability</h4>
+            <p>We focus on long-term solutions that create lasting impact in the communities we serve.</p>
+        </div>
+        <div class="value-card col-md-3 col-12 mb-4">
+            <h4>Collaboration</h4>
+            <p>We believe in working together with local and global partners for a greater good.</p>
+        </div>
+        <div class="value-card col-md-3 col-12 mb-4">
+            <h4>Integrity</h4>
+            <p>We uphold transparency and trust in every action we take, ensuring accountability.</p>
+        </div>
+    </div>
+
+    
+</div>
+<!-- WhatsApp Icon -->
+<a href="https://wa.me/0777587916" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: white; border-radius: 50%; padding: 15px; font-size: 24px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); z-index: 1000;">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+
+
+    <!-- Footer Section -->
+<footer class="text-center">
+    <div class="container">
+        <!-- Row for Footer Columns -->
+        <div class="row">
+            <!-- Logo and Charity Name Column -->
+            <div class="col-md-4 mb-4">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="assets/images (3).jpeg" alt="Jojo Charity Logo" class="footer-logo">
+                    <h3 class="ms-3">Jojo Charity</h3>
+                </div>
+            </div>
+
+            <!-- Navigation Links Column -->
+            <div class="col-md-4 mb-4">
+                <h5>Navigation</h5>
+                <div class="footer-nav">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Events</a>
+                    <a href="#">Get Involved</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+
+            <!-- Social Icons Column -->
+            <div class="col-md-4 mb-4">
+                <h5>Follow Us</h5>
+                <div class="social-icons text-center">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Notice -->
+        <p class="mt-4" style="font-size: 0.9rem;">&copy; 2024 Jojo Charity. All rights reserved.</p>
+    </div>
+</footer>
+<!-- Bootstrap Bundle JS (includes Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap Bundle JS (includes Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Events - Jojo Charity</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+        }
+        .event-card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        .event-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .event-card .card-body {
+            background-color: #ffffff;
+            padding: 20px;
+        }
+        .event-card h5 {
+            color: #388e3c;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        .event-card p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+        .btn-event {
+            background-color: #388e3c;
+            color: white;
+            padding: 8px 20px;
+            text-transform: uppercase;
+        }
+        .btn-event:hover {
+            background-color: #2c6c32;
+            color: white;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Pre-Nav Section -->
+<div class="pre-nav mb-2">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div>
+            <a href="#" class="btn btn-success btn-sm">Event Calendar</a>
+            <a href="#" class="btn btn-success btn-sm">Donate Now</a>
+        </div>
+        <div class="social-icons d-flex">
+            <a href="#" class="mx-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="mx-2"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="mx-2"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="mx-2"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </div>
+</div>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images (3).jpeg" alt="Jojo Charity Logo" class="rounded-circle" style="width: 40px; height: 40px; margin-right: 10px;">
+            Jojo Charity
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About Us
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                        <li><a class="dropdown-item" href="mission.html">Our Mission</a></li>
+                        <li><a class="dropdown-item" href="vision.html">Our Vision</a></li>
+                        <li><a class="dropdown-item" href="teams.html">Our Team</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Events
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                        <li><a class="dropdown-item" href="coming.html">Upcoming Events</a></li>
+                        <li><a class="dropdown-item" href="past.html">Past Events</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="getInvolvedDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Get Involved
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="getInvolvedDropdown">
+                        <li><a class="dropdown-item" href="volunteer.html">Volunteer</a></li>
+                        <li><a class="dropdown-item" href="partner.html">Partner With Us</a></li>
+                        <li><a class="dropdown-item" href="CHILD.html">Sponsor a Child</a></li>
+                        <li><a class="dropdown-item" href="donate.html">Donate Resources</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container py-5">
+    <div class="section-header">
+        <h1 style="color: #388e3c;">Past Events</h1>
+        <p style="font-size: 1.2rem;">Check out some of our past events and the positive impact we’ve made in the community.</p>
+    </div>
+
+    <div class="row">
+        <!-- Event 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card event-card">
+                <img src="assets/event1.jpg" alt="Event 1">
+                <div class="card-body">
+                    <h5>Food Drive for the Homeless</h5>
+                    <p><strong>Date:</strong> 15th October 2023</p>
+                    <p>A successful food drive that provided meals for over 500 homeless individuals in our community.</p>
+                    <a href="event-details.html" class="btn btn-event">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card event-card">
+                <img src="assets/event2.jpg" alt="Event 2">
+                <div class="card-body">
+                    <h5>Annual Charity Auction</h5>
+                    <p><strong>Date:</strong> 5th November 2023</p>
+                    <p>Our annual charity auction raised over $10,000 for our education programs.</p>
+                    <a href="event-details.html" class="btn btn-event">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card event-card">
+                <img src="assets/event3.jpg" alt="Event 3">
+                <div class="card-body">
+                    <h5>Tree Planting Campaign</h5>
+                    <p><strong>Date:</strong> 20th November 2023</p>
+                    <p>We planted 500 trees in local schools and public spaces to promote environmental sustainability.</p>
+                    <a href="event-details.html" class="btn btn-event">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card event-card">
+                <img src="assets/event4.jpg" alt="Event 4">
+                <div class="card-body">
+                    <h5>Back-to-School Donation Drive</h5>
+                    <p><strong>Date:</strong> 30th August 2023</p>
+                    <p>Collected school supplies for underprivileged children in the community to ensure they have the tools for success.</p>
+                    <a href="event-details.html" class="btn btn-event">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card event-card">
+                <img src="assets/event5.jpg" alt="Event 5">
+                <div class="card-body">
+                    <h5>Health and Wellness Fair</h5>
+                    <p><strong>Date:</strong> 14th July 2023</p>
+                    <p>A free health and wellness fair that provided medical check-ups, fitness tips, and mental health workshops.</p>
+                    <a href="event-details.html" class="btn btn-event">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 6 -->
+        <div class="col-md-4 mb-4">
+            <div class="card event-card">
+                <img src="assets/event6.jpg" alt="Event 6">
+                <div class="card-body">
+                    <h5>Annual Fundraising Dinner</h5>
+                    <p><strong>Date:</strong> 22nd June 2023</p>
+                    <p>Our fundraising dinner brought together local leaders to discuss ways to improve education and community welfare.</p>
+                    <a href="event-details.html" class="btn btn-event">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 7 -->
+        <div class="col-md-4 mb-4">
+            <div class="card event-card">
+                <img src="assets/event7.jpg" alt="Event 7">
+                <div class="card-body">
+                    <h5>Disaster Relief Collection</h5>
+                    <p><strong>Date:</strong> 10th May 2023</p>
+                    <p>Collected food, clothing, and emergency supplies for disaster-affected families across the region.</p>
+                    <a href="event-details.html" class="btn btn-event">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- More Events Button -->
+    <div class="text-center mt-4">
+        <a href="more-past-events.html" class="btn btn-success" style="padding: 12px 30px; font-size: 1rem;">View All Past Events</a>
+    </div>
+</div>
+<!-- WhatsApp Icon -->
+<a href="https://wa.me/0777587916" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: white; border-radius: 50%; padding: 15px; font-size: 24px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); z-index: 1000;">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- Footer Section -->
+<footer class="text-center">
+    <div class="container">
+        <!-- Row for Footer Columns -->
+        <div class="row">
+            <!-- Logo and Charity Name Column -->
+            <div class="col-md-4 mb-4">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="assets/images (3).jpeg" alt="Jojo Charity Logo" class="footer-logo">
+                    <h3 class="ms-3">Jojo Charity</h3>
+                </div>
+            </div>
+
+            <!-- Navigation Links Column -->
+            <div class="col-md-4 mb-4">
+                <h5>Navigation</h5>
+                <div class="footer-nav">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Events</a>
+                    <a href="#">Get Involved</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+
+            <!-- Social Icons Column -->
+            <div class="col-md-4 mb-4">
+                <h5>Follow Us</h5>
+                <div class="social-icons text-center">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Notice -->
+        <p class="mt-4" style="font-size: 0.9rem;">&copy; 2024 Jojo Charity. All rights reserved.</p>
+    </div>
+</footer>
+<!-- Bootstrap Bundle JS (includes Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap Bundle JS (includes Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
